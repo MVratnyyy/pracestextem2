@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="pracestextem.css">
+    <title>Práce s Textem</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Práce s textem</h2>
+
+        <textarea id="inputText"></textarea>
+        
+        <button class="button" onclick="reverze()">Reverze</button>
+
+        <button class="button" onclick="rozdeleni()">Rozdělení na slova</button>
+
+        <button class="button" onclick="pocitanislov()">Počet slov v textu</button>
+
+        <button class="button" onclick="nahradit()">Nahrazení písmen</button>
+
+        <button class="button" onclick="najittext()">Hledání textu</button>
+
+        <button class="button" onclick="statistikyTextu()">Statistiky Textu</button>
+
+        <!-- Nové rozhraní pro šifrování -->
+        <label for="cryptoMethod">Metoda šifrování:</label>
+        <select id="cryptoMethod">
+            <option value="caesar">Caesarova šifra</option>
+            <option value="vigenere">Vigenèrova šifra</option>
+            <option value="aes">AES</option>
+        </select>
+        <br>
+        <label for="cryptoKey">Klíč:</label>
+        <input type="text" id="cryptoKey">
+        <br>
+        <button class="button" onclick="encryptText()">Zašifrovat</button>
+
+        <div id="result" class="result"></div>
+
+    </div>
+
+    <script src="pracestextem.js"></script>
+</body>
+</html>
